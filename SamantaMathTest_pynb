@@ -1,0 +1,93 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNUKp0TmHcjytOA33SI94WI",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/KhandokerSamanta/Python-basic/blob/main/SamantaMathTest_pynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 436
+        },
+        "id": "1uoWQZ31Il8m",
+        "outputId": "ae69d822-6028-48b9-f481-6c12ca26fa53"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "--2024-11-06 18:25:06--  https://github.com/KhandokerSamanta/Python-basic/blob/main/SamantaMathTest.py\n",
+            "Resolving github.com (github.com)... 140.82.114.3\n",
+            "Connecting to github.com (github.com)|140.82.114.3|:443... connected.\n",
+            "HTTP request sent, awaiting response... 200 OK\n",
+            "Length: unspecified [text/html]\n",
+            "Saving to: ‘SamantaMathTest.py.2’\n",
+            "\n",
+            "SamantaMathTest.py.     [ <=>                ] 307.83K  1.73MB/s    in 0.2s    \n",
+            "\n",
+            "2024-11-06 18:25:07 (1.73 MB/s) - ‘SamantaMathTest.py.2’ saved [315220]\n",
+            "\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "invalid character '·' (U+00B7) (SamantaMathTest.py, line 111)",
+          "traceback": [
+            "Traceback \u001b[0;36m(most recent call last)\u001b[0m:\n",
+            "  File \u001b[1;32m\"/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py\"\u001b[0m, line \u001b[1;32m3553\u001b[0m, in \u001b[1;35mrun_code\u001b[0m\n    exec(code_obj, self.user_global_ns, self.user_ns)\n",
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-3-f4aef3331b99>\"\u001b[0;36m, line \u001b[0;32m6\u001b[0;36m, in \u001b[0;35m<cell line: 6>\u001b[0;36m\u001b[0m\n\u001b[0;31m    import SamantaMathTest as mt\u001b[0m\n",
+            "\u001b[0;36m  File \u001b[0;32m\"/content/SamantaMathTest.py\"\u001b[0;36m, line \u001b[0;32m111\u001b[0m\n\u001b[0;31m    <title>Python-basic/SamantaMathTest.py at main · KhandokerSamanta/Python-basic · GitHub</title>\u001b[0m\n\u001b[0m                                                   ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid character '·' (U+00B7)\n"
+          ]
+        }
+      ],
+      "source": [
+        "import sys\n",
+        "!wget https://github.com/KhandokerSamanta/Python-basic/blob/main/SamantaMathTest.py\n",
+        "\n",
+        "sys.path.append('/content')\n",
+        "\n",
+        "import SamantaMathTest as mt\n",
+        "\n",
+        "noOfDigit = int(input(\"Enter digit: \"))\n",
+        "\n",
+        "print(mt.print_pi_to_n_digits(noOfDigit))\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "7Iwn-C7uoErv"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
